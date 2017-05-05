@@ -1,7 +1,15 @@
 # spring-boot-gradle-docker-boilerplate
 
-## How to:
+## Usage:
 ```bash
-./gradlew build buildDocker
-docker run -p 8080:8080 spring-boot-gradle-docker-boilerplate
+./gradlew buildDocker
+docker run -d -p 8080:8080 spring-boot-gradle-docker-boilerplate
 ```
+Then go to [http://localhost:8080](http://localhost:8080)
+
+## Places to rename stuff:
+* README.md
+* settings.gradle
+* src/main/java
+* src/main/docker/Dockerfile
+* src/main/resources/logback.xml
